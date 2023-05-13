@@ -1,0 +1,93 @@
+/* set box-sizing to border-box to include padding in element width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* set a minimum height for the body to ensure footer stays at bottom of page */
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* center the header text and add a gradient background */
+  #page-header {
+    background: linear-gradient(to right, #008080, #00bfff);
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* add some spacing and a background to the interests section */
+  #interests {
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  /* style the list items in the education section with a custom bullet */
+  #education li {
+    list-style-type: none;
+    position: relative;
+  }
+  
+  #education li:before {
+    content: '►';
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    color: #008080;
+  }
+  
+  /* style the "Want to learn more" button */
+  #study-more-btn {
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #study-more-btn:hover {
+    background-color: #00bfff;
+  }
+  
+  /* style the "Learn more" text that's hidden by default */
+  #study-more {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    display: none;
+  }
+  
+
+  #page-header {
+    background-color: #008080;
+    color: #ffffff;
+    padding: 1rem;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+/* Button */
+button {
+	margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+	background-color: #f2f2f2;
+	padding: 1rem;
+	text-align: center;
+}
